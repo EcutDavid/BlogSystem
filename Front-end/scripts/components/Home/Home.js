@@ -32,6 +32,7 @@ export default class App extends React.Component{
             <Tab label='Me' onClick= {() => {this.setState({headerIcon: 'smile-o'}); }}/>
           </Tabs>
         </div>
+        {this.props.children}
       </div>
     );
   }
