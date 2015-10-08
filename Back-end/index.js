@@ -3,8 +3,7 @@
 let app = require('express')();
 let http = require('http');
 let path = require('path');
-
-console.log(`current production enviroment ${process.env.NODE_ENV}`);
+var morgan = require('morgan');
 
 /* configurations */
 app.set('PORT', process.env.PORT || 8000)
@@ -12,13 +11,10 @@ app.set('view engine', 'jade');
 app.set('views', path.join(__dirname, 'views'));
 //hide x-powered-by in header
 app.disable('x-powered-by');
-//todo: do I need E tag?
 
-if('production' === process.env.NODE_ENV){
-  app.use(function(req, res, next) {
-    console.log('%s %s — %s', (new Date).toString(), req.method, req.url);
-    return next();
-  });
+console.log(`current production enviroment ${process.env.NODE_ENV}`);
+if('debug' === process.env.NODE_ENV){
+  app.use(morgan('combined'));
 }
 
 /* routers */
