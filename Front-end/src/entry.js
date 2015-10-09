@@ -1,5 +1,5 @@
 import React from 'react/addons';
-import Home from './components/Home/Home';
+import Master from './components/Master/Master';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import 'font-awesome/css/font-awesome.min.css';
 import { Router, Route, IndexRoute } from 'react-router';
@@ -34,7 +34,7 @@ class Me extends React.Component{
 
 React.render((
   <Router>
-    <Route path="/" component={Home}>
+    <Route path="/" component={Master}>
       <IndexRoute component={About} />
       <Route path={pageEnum.HOME} component={About} />
       <Route path={pageEnum.TECHNOTES} component={TechNotes} />

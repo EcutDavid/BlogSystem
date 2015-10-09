@@ -2,7 +2,7 @@ import React from 'react/addons';
 import {Tabs, Tab} from 'material-ui';
 import ThemeManager from 'material-ui/lib/styles/theme-manager';
 import LightRawTheme from 'material-ui/lib/styles/raw-themes/light-raw-theme';
-import './home.scss';
+import './Master.scss';
 import { PropTypes } from 'react-router';
 import pageEnum from '../../constant/pageName';
 
@@ -30,7 +30,7 @@ export default class App extends React.Component{
 
   render(){
     return (
-      <div className='App'>
+      <div className='Master'>
         <header className='headerBar'>
           <i className={`fa fa-${this.state.headerIcon} headerIcon`}></i>
           <Tabs className='headerTabs'>
