@@ -31,7 +31,7 @@ export default class App extends React.Component{
   render(){
     return (
       <div className='App'>
-        <div className='headerBar'>
+        <header className='headerBar'>
           <i className={`fa fa-${this.state.headerIcon} headerIcon`}></i>
           <Tabs className='headerTabs'>
             <Tab label='Home' onClick= {() => {this._changePage('home', `/${pageEnum.HOME}`); }}/>
@@ -39,8 +39,11 @@ export default class App extends React.Component{
             <Tab label='Articles' onClick= {() => {this._changePage('pencil', `/${pageEnum.ARTICLES}`); }}/>
             <Tab label='Me' onClick= {() => {this._changePage('smile-o', `/${pageEnum.ME}`); }}/>
           </Tabs>
-        </div>
+        </header>
         {this.props.children}
+        <footer>
+
+        </footer>
       </div>
     );
   }
