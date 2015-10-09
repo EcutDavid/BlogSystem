@@ -1,14 +1,23 @@
 'use strict'
 /* dependencies */
-let app = require('express')();
+let express = require('express');
+let app = express();
 let http = require('http');
 let path = require('path');
-var morgan = require('morgan');
+let morgan = require('morgan');
+let fs = require('fs');
+let favicon = require('serve-favicon');
+let cookieParser = require('cookie-parser');
+let bodyParser = require('body-parser');
 
 /* configurations */
 app.set('PORT', process.env.PORT || 8000)
 app.set('view engine', 'jade');
 app.set('views', path.join(__dirname, 'views'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(express.static(path.join(__dirname, '../Front-end/build')));
 //hide x-powered-by in header
 app.disable('x-powered-by');
 
@@ -21,6 +30,10 @@ if('debug' === process.env.NODE_ENV){
 app.get('/', (req, res) => {
   console.log('GET IT');
   res.end();
+});
+
+app.use(function(req, res, next) {
+  res.end('Not found');
 });
 
 let server = http.createServer(app);
