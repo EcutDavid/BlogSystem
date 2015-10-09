@@ -31,8 +31,8 @@ export default class App extends React.Component{
   render(){
     return (
       <div className='Master'>
-        <header className='headerBar'>
-          <i className={`fa fa-${this.state.headerIcon} headerIcon`}></i>
+        <header className='headerBar' style={{backgroundColor: this.state.muiTheme.appBar.color}}>
+          <i className={`fa fa-${this.state.headerIcon} headerIcon`}/>
           <Tabs className='headerTabs'>
             <Tab label='Home' onClick= {() => {this._changePage('home', `/${pageEnum.HOME}`); }}/>
             <Tab label='TechNotes' onClick= {() => {this._changePage('code', `/${pageEnum.TECHNOTES}`); }}/>
