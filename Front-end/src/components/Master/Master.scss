@@ -5,9 +5,9 @@
 
   .headerBar{
     width: 100%;
-    height: 48px;
     box-shadow: 0 0 4px #000;
     position: relative;
+    height: 48px;
 
     .headerIcon{
       @extend .VerticalAlign;
@@ -15,9 +15,13 @@
       color: #fff;
       float: left;
       padding-left: 20px;
+      @media screen and (max-width: 470px) {
+        display: none;
+      }
     }
 
     .headerTabs{
+      display: block;
       float: right;
       width: 400px;
     }
