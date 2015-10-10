@@ -1,5 +1,5 @@
 import React from 'react/addons';
-import Master from './components/Master/Master';
+import Master from './components/Container/Master';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import 'font-awesome/css/font-awesome.min.css';
 import createBrowserHistory from 'history/lib/createBrowserHistory';
