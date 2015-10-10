@@ -1,15 +1,30 @@
 {
   "name": "frontendtest",
-  "version": "1.0.0",
-  "description": "a test",
+  "version": "0.1.1",
+  "description": "BlogSystem based on react express and webpack",
   "scripts": {
     "build": "webpack --config webpackBuild.config.js -w --optimize-minimize",
     "buildTest": "webpack --config webpackTest.config.js",
     "dev": "webpack-dev-server --devtool eval --colors --hot --content-base build",
     "test": "karma start"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "David Guan",
+  "license": "MIT",
+  "keywords": [
+    "express",
+    "react",
+    "webpack"
+  ],
+  "bugs": {
+    "url": "https://github.com/EcutDavid/BlogSystem/issues"
+  },
+  "homepage": {
+    "url": "https://github.com/EcutDavid/BlogSystem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EcutDavid/BlogSystem.git"
+  },
   "devDependencies": {
     "babel-core": "^5.8.24",
     "babel-eslint": "^4.1.3",
