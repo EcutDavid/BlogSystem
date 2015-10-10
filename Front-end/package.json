@@ -52,6 +52,7 @@
     "fbjs": "^0.2.1",
     "flux": "^2.1.1",
     "font-awesome": "^4.4.0",
+    "history": "^1.12.4",
     "material-ui": "^0.12.1",
     "react": "^0.13.3",
     "react-dom": "^0.14.0-rc1",

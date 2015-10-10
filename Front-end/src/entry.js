@@ -2,6 +2,7 @@ import React from 'react/addons';
 import Master from './components/Master/Master';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import 'font-awesome/css/font-awesome.min.css';
+import createBrowserHistory from 'history/lib/createBrowserHistory';
 import { Router, Route, IndexRoute } from 'react-router';
 import './reset.scss';
 import pageEnum from './constant/pageName';
@@ -33,7 +34,7 @@ class Me extends React.Component{
 }
 
 React.render((
-  <Router>
+  <Router history={createBrowserHistory()}>
     <Route path="/" component={Master}>
       <IndexRoute component={About} />
       <Route path={pageEnum.HOME} component={About} />
