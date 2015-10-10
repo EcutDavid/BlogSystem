@@ -1,43 +1,26 @@
 import React from 'react/addons';
 import Master from './components/Container/Master';
-import injectTapEventPlugin from 'react-tap-event-plugin';
-import 'font-awesome/css/font-awesome.min.css';
-import createBrowserHistory from 'history/lib/createBrowserHistory';
-import { Router, Route, IndexRoute } from 'react-router';
-import './reset.scss';
+import Home from './components/Container/Home';
+import TechNotes from './components/Container/TechNotes';
+import Articles from './components/Container/Articles';
+import Me from './components/Container/Me';
+
 import pageEnum from './constant/pageName';
 
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import createBrowserHistory from 'history/lib/createBrowserHistory';
+import { Router, Route, IndexRoute } from 'react-router';
+
+import 'font-awesome/css/font-awesome.min.css';
+import './reset.scss';
+
 injectTapEventPlugin();
-
-class About extends React.Component{
-  render(){
-    return (<h1>Home</h1>);
-  }
-}
-
-class TechNotes extends React.Component{
-  render(){
-    return (<h1>TechNotes</h1>);
-  }
-}
-
-class Articles extends React.Component{
-  render(){
-    return (<h1>Articles</h1>);
-  }
-}
-
-class Me extends React.Component{
-  render(){
-    return (<h1>Me</h1>);
-  }
-}
 
 React.render((
   <Router history={createBrowserHistory()}>
     <Route path="/" component={Master}>
-      <IndexRoute component={About} />
-      <Route path={pageEnum.HOME} component={About} />
+      <IndexRoute component={Home} />
+      <Route path={pageEnum.HOME} component={Home} />
       <Route path={pageEnum.TECHNOTES} component={TechNotes} />
       <Route path={pageEnum.ARTICLES} component={Articles} />
       <Route path={pageEnum.ME} component={Me} />
