@@ -11,7 +11,7 @@ export default class Me extends React.Component{
         <h1 className='title'>
           Hi everyone, I{"'"}m David Guan.
           <br />
-          Coder, Blog writer, Books lover.
+          Coder, blog writer, books lover.
         </h1>
 
         <div className='ContentRow'>
