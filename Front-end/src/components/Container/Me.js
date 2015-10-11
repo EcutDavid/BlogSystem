@@ -58,7 +58,7 @@ export default class Me extends React.Component{
             <br />
             build project on github repo everyday.
             <br />
-            Enjoy Make contibution to open source.
+            Enjoy Making contibution to open source.
           </article>
           <FontIcon style={{fontSize: '6em', color: '#00bcd4'}}
             className='fa fa-github icon right'
@@ -70,11 +70,11 @@ export default class Me extends React.Component{
             className='fa fa-file-code-o icon left'
             hoverColor='#E74748'/>
           <article className='content'>
-            I enjoy writing Blog,
+            Enjoy writing Blog,
             <br />
             But <a href='http://www.cnblogs.com/E-WALKER/'>this Blog</a> is in Chinese languages.
             <br />
-            So I start build this site.
+            So I start build this site, with react & node.js.
           </article>
         </div>
 
