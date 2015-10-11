@@ -1,3 +1,37 @@
+@import '../../global';
+
 .Me{
-  text-align: center;
+  position: relative;
+  .ContentRow{
+    padding: 20px 0;
+    position: relative;
+    height: 150px;
+
+    .icon{
+      width: 40%;
+      text-align: center;
+      @extend .VerticalAlign;
+    }
+
+    .icon.left{
+      margin-left: 10%;
+    }
+
+    .icon.right{
+      margin-left: 50%;
+    }
+
+    .content{
+      font-size: 1.3em;
+      line-height: 1.2;
+      margin-left: 50%;
+      width: 40%;
+      text-align: center;
+      @extend .VerticalAlign;
+    }
+
+    .content.left{
+      margin-left: 10%;
+    }
+  }
 }

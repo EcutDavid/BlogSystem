@@ -8,7 +8,7 @@ import Me from './components/Container/Me';
 import pageEnum from './constant/pageName';
 
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import createBrowserHistory from 'history/lib/createBrowserHistory';
+// import createBrowserHistory from 'history/lib/createBrowserHistory';
 import { Router, Route, IndexRoute } from 'react-router';
 
 import 'font-awesome/css/font-awesome.min.css';
@@ -16,8 +16,9 @@ import './reset.scss';
 
 injectTapEventPlugin();
 
+// change default history to createBrowserHistory if deploy to real server.
 React.render((
-  <Router history={createBrowserHistory()}>
+  <Router>
     <Route path="/" component={Master}>
       <IndexRoute component={Home} />
       <Route path={pageEnum.HOME} component={Home} />
