@@ -20,7 +20,7 @@ export default class Me extends React.Component{
             hoverColor='#E74748'/>
           <article className='content'>
             My
-            <a href='http://ecutdavid.github.io/WenxiangGuanResume.github.io/'>first resume</a>
+            <a href='http://ecutdavid.github.io/WenxiangGuanResume.github.io/'>first resume</a>,
             finished on Jun 2, 2015.
             <br />
             It summarizes my campus life :)
@@ -72,7 +72,7 @@ export default class Me extends React.Component{
           <article className='content'>
             Enjoy writing Blog,
             <br />
-            but <a href='http://www.cnblogs.com/E-WALKER/'>this Blog</a> is in Chinese languages.
+            but <a href='http://www.cnblogs.com/E-WALKER/'>this Blog</a> is in Chinese.
             <br />
             So I start build this site, with react & node.js.
           </article>
