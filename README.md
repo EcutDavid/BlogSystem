@@ -1,3 +1,6 @@
+# LiveDemo    
+[git page](https://ecutdavid.github.io/BlogSystem)
+
 # BlogSystem
 Mainly based on react and node.js.    
 
