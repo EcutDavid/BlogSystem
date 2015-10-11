@@ -23,14 +23,14 @@ export default class Me extends React.Component{
             <a href='http://ecutdavid.github.io/WenxiangGuanResume.github.io/'>first resume</a>
             finished on Jun 2, 2015.
             <br />
-            It summarize my campus life :)
+            It summarizes my campus life :)
             <br />
           </article>
         </div>
 
         <div className='ContentRow'>
           <article className='content left'>
-            Working at Newegg.com After Jun 13, 2015.
+            Working at Newegg.com after Jun 13, 2015.
             <br />
             Based on ASP.Net
           </article>
@@ -48,7 +48,7 @@ export default class Me extends React.Component{
             <br />
             I begin study and practise new techs.
             <br />
-            never stop improve my skills and efficiency.
+            Never stop improving my skills and efficiency.
           </article>
         </div>
 
@@ -56,7 +56,7 @@ export default class Me extends React.Component{
           <article className='content left'>
             <a href='https://github.com/EcutDavid'>Github profile</a>
             <br />
-            build project on github repo everyday.
+            Build project on github repo everyday.
             <br />
             Enjoy Making contibution to open source.
           </article>
@@ -72,7 +72,7 @@ export default class Me extends React.Component{
           <article className='content'>
             Enjoy writing Blog,
             <br />
-            But <a href='http://www.cnblogs.com/E-WALKER/'>this Blog</a> is in Chinese languages.
+            but <a href='http://www.cnblogs.com/E-WALKER/'>this Blog</a> is in Chinese languages.
             <br />
             So I start build this site, with react & node.js.
           </article>
@@ -80,7 +80,7 @@ export default class Me extends React.Component{
 
         <div className='ContentRow'>
           <article className='content left'>
-            I will try my best to do every thing!
+            I will try my best to do everything!
           </article>
           <FontIcon style={{fontSize: '6em', color: '#00bcd4'}}
             className='fa fa-heart-o icon right'
