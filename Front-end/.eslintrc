@@ -13,7 +13,7 @@
     "es6": true
   },
   "rules": {
-    "quotes": [ 1, "single" ],
+    "quotes": [ 2, "single" ],
     "no-undef": 0,
     "global-strict": 0,
     "no-extra-semi": 1,
