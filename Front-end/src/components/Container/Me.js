@@ -6,6 +6,7 @@ import {FontIcon} from 'material-ui';
 //todo: how to get ThemeManager in child material-ui master component?
 export default class Me extends React.Component{
   render(){
+    let themeBackColor = '#00bcd4';
     return (
       <div className='Me'>
         <h1 className='title'>
@@ -15,7 +16,7 @@ export default class Me extends React.Component{
         </h1>
 
         <div className='ContentRow'>
-          <FontIcon style={{fontSize: '6em', color: '#00bcd4'}}
+          <FontIcon style={{fontSize: '6em', color: themeBackColor}}
             className='fa fa-graduation-cap icon left'
             hoverColor='#E74748'/>
           <article className='content'>
@@ -34,13 +35,13 @@ export default class Me extends React.Component{
             <br />
             Based on ASP.Net
           </article>
-          <FontIcon style={{fontSize: '6em', color: '#00bcd4'}}
+          <FontIcon style={{fontSize: '6em', color: themeBackColor}}
             className='fa fa-laptop icon right'
             hoverColor='#E74748'/>
         </div>
 
         <div className='ContentRow'>
-          <FontIcon style={{fontSize: '6em', color: '#00bcd4'}}
+          <FontIcon style={{fontSize: '6em', color: themeBackColor}}
             className='fa fa-book icon left'
             hoverColor='#E74748'/>
           <article className='content'>
@@ -58,15 +59,15 @@ export default class Me extends React.Component{
             <br />
             Build project on github repo everyday.
             <br />
-            Enjoy Making contibution to open source.
+            Enjoy Making contribution to open source.
           </article>
-          <FontIcon style={{fontSize: '6em', color: '#00bcd4'}}
+          <FontIcon style={{fontSize: '6em', color: themeBackColor}}
             className='fa fa-github icon right'
             hoverColor='#E74748'/>
         </div>
 
         <div className='ContentRow'>
-          <FontIcon style={{fontSize: '6em', color: '#00bcd4'}}
+          <FontIcon style={{fontSize: '6em', color: themeBackColor}}
             className='fa fa-file-code-o icon left'
             hoverColor='#E74748'/>
           <article className='content'>
@@ -82,7 +83,7 @@ export default class Me extends React.Component{
           <article className='content left'>
             I will try my best to do everything!
           </article>
-          <FontIcon style={{fontSize: '6em', color: '#00bcd4'}}
+          <FontIcon style={{fontSize: '6em', color: themeBackColor}}
             className='fa fa-heart-o icon right'
             hoverColor='#E74748'/>
         </div>

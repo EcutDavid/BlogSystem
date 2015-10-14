@@ -16,7 +16,8 @@ import './reset.scss';
 
 injectTapEventPlugin();
 
-// change default history to createBrowserHistory if deploy to real server.
+// Change default history to createBrowserHistory if deploy to real server.
+// The createBrowserHistory need some server configuration, so can not serve with git page.(URL will not work)
 React.render((
   <Router>
     <Route path="/" component={Master}>

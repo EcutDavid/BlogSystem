@@ -21,14 +21,14 @@
       width: 40%;
       text-align: center;
       @extend .VerticalAlign;
-    }
 
-    .icon.left{
-      margin-left: 10%;
-    }
+      &.left{
+        margin-left: 10%;
+      }
 
-    .icon.right{
-      margin-left: 50%;
+      &.right{
+        margin-left: 50%;
+      }
     }
 
     .content{
@@ -38,10 +38,10 @@
       width: 40%;
       text-align: center;
       @extend .VerticalAlign;
-    }
 
-    .content.left{
-      margin-left: 10%;
+      &.left{
+        margin-left: 10%;
+      }
     }
   }
 
