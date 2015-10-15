@@ -1,5 +1,5 @@
 # LiveDemo    
-[git page](https://ecutdavid.github.io/BlogSystem)
+[Demo here](https://ecutdavid.github.io)
 
 # BlogSystem
 Mainly based on react and node.js.    
