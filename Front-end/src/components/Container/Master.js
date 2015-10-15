@@ -7,19 +7,13 @@ import { PropTypes } from 'react-router';
 import pageEnum from '../../constant/pageName';
 
 export default class App extends React.Component{
-
   constructor(){
     super();
+    this.mixins = [History];
+    //todo: can not fetch this.context.muiTheme here, why?
     this.state = {
       muiTheme: ThemeManager.getMuiTheme(LightRawTheme),
       headerIcon: 'home'
-    };
-    this.mixins = [History];
-  }
-
-  getChildContext(){
-    return {
-      muiTheme: this.state.muiTheme
     };
   }
 
@@ -65,9 +59,6 @@ export default class App extends React.Component{
 }
 
 App.contextTypes = {
-  history: PropTypes.history
-};
-
-App.childContextTypes = {
-    muiTheme: React.PropTypes.object
+  history: PropTypes.history,
+  muiTheme: React.PropTypes.object
 };
