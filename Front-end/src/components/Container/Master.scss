@@ -11,7 +11,7 @@
     height: 48px;
 
     .headerIcon{
-      @extend .VerticalAlign;
+      @include VerticalAlign;
       font-size: 2rem;
       color: #fff;
       float: left;

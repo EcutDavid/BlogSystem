@@ -1,4 +1,4 @@
-.VerticalAlign{
+@mixin VerticalAlign{
   position: absolute;
   top: 50%;
   transform: translate(0%, -50%);
@@ -6,7 +6,7 @@
   -webkit-transform: translate(0%, -50%);
 }
 
-.VerHorAlign{
+@mixin VerHorAlign{
   position: absolute;
   top: 50%;
   left: 50%;
