@@ -28,12 +28,27 @@ export default class App extends React.Component{
     this.context.history.pushState(null, path);
   }
 
+  _getTabIndex(){
+    switch (this.props.location.pathname) {
+      case `/${pageEnum.HOME}`:
+        return 0;
+      case `/${pageEnum.TECHNOTES}`:
+        return 1;
+      case `/${pageEnum.ARTICLES}`:
+        return 2;
+      case `/${pageEnum.ME}`:
+        return 3;
+      default:
+        return 0;
+    }
+  }
+
   render(){
     return (
       <div className='Master'>
         <header className='headerBar' style={{backgroundColor: this.state.muiTheme.tabs.backgroundColor}}>
           <i className={`fa fa-${this.state.headerIcon} headerIcon`}/>
-          <Tabs className='headerTabs'>
+          <Tabs initialSelectedIndex={this._getTabIndex()} className='headerTabs'>
             <Tab label='Home' onClick= {() => {this._changePage('home', `/${pageEnum.HOME}`); }}/>
             <Tab label='TechNotes' onClick= {() => {this._changePage('code', `/${pageEnum.TECHNOTES}`); }}/>
             <Tab label='Articles' onClick= {() => {this._changePage('pencil', `/${pageEnum.ARTICLES}`); }}/>
