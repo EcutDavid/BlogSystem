@@ -12,9 +12,9 @@ export default class TechNotes extends React.Component{
             return (
               <Card className='Card' key={`TechNotesCard${index}`}>
               <CardHeader
-                title="Title"
+                title={item}
                 subtitle="Subtitle"
-                avatar={<Avatar>JS</Avatar>}/>
+                avatar={<Avatar backgroundColor= '#00bcd4'>JS</Avatar>}/>
                 <CardText>
                   {`The content of tech blog post ${item}`}
                 </CardText>

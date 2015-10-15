@@ -1,22 +1,28 @@
 import React from 'react/addons';
 import './Articles.scss';
 import {Card, CardHeader, CardText, Avatar} from'material-ui';
-let tiltes = ['A', 'B', 'D', 'E', 'G', 'H'];
+let blogData = {
+  iconSymbol: 'DG',
+  tilte: 'A',
+  Subtitle: 'a mock blog',
+  content: 'blablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalba'
+};
+let blogItems = [blogData];
 
 export default class Articles extends React.Component{
   render(){
     return (
       <div className='Articles'>
         {
-          tiltes.map((item, index) => {
+          blogItems.map((item, index) => {
             return (
               <Card className='Card' key={`TechNotesCard${index}`}>
                 <CardHeader
-                  title="Title"
-                  subtitle="Subtitle"
-                  avatar={<Avatar>DG</Avatar>}/>
+                  title={item.tilte}
+                  subtitle={item.Subtitle}
+                  avatar={<Avatar backgroundColor= '#00bcd4'>{item.iconSymbol}</Avatar>}/>
                 <CardText>
-                  {`The content of blog pt ${item}`}
+                  {item.content}
                 </CardText>
               </Card>);
           })
