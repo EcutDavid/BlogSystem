@@ -3,7 +3,7 @@ import './Articles.scss';
 import {Card, CardHeader, CardText, Avatar} from'material-ui';
 let blogData = {
   iconSymbol: 'DG',
-  tilte: 'A',
+  tilte: 'Coding & Life',
   Subtitle: 'a mock blog',
   content: 'blablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalba'
 };
@@ -18,7 +18,7 @@ export default class Articles extends React.Component{
             return (
               <Card className='Card' key={`TechNotesCard${index}`}>
                 <CardHeader
-                  title={item.tilte}
+                  title=<h1>{item.tilte}</h1>
                   subtitle={item.Subtitle}
                   avatar={<Avatar backgroundColor= '#00bcd4'>{item.iconSymbol}</Avatar>}/>
                 <CardText>
