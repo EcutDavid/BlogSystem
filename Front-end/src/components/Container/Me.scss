@@ -11,6 +11,11 @@ $contentOccupy: 0.8;
     font-size: 3em;
     color: #00bcd4;
     line-height: 1.3;
+
+    @media screen and (max-width: 470px) {
+      font-size: 1.8em;
+      line-height: 1.2;
+    }
   }
 
   .ContentRow{
