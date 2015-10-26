@@ -1,5 +1,6 @@
 import React from 'react/addons';
 import Master from './components/Container/Master';
+import BlogTemplate from './components/Container/BlogTemplate';
 import Home from './components/Container/Home';
 import TechNotes from './components/Container/TechNotes';
 import Articles from './components/Container/Articles';
@@ -41,6 +42,7 @@ class App extends React.Component{
           <Route path={pageEnum.HOME} component={Home} />
           <Route path={pageEnum.TECHNOTES} component={TechNotes} />
           <Route path={pageEnum.ARTICLES} component={Articles} />
+          <Route path={`${pageEnum.ARTICLES}/:id`} component={BlogTemplate} />
           <Route path={pageEnum.ME} component={Me} />
         </Route>
       </Router>

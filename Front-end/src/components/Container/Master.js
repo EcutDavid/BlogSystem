@@ -22,19 +22,25 @@ export default class App extends React.Component{
     this.context.history.pushState(null, path);
   }
 
+  _isStrStartWith(str, matchStr){
+    return str.indexOf(matchStr) === 0;
+  }
+
   _getTabIndex(){
-    switch (this.props.location.pathname) {
-      case `/${pageEnum.HOME}`:
-        return 0;
-      case `/${pageEnum.TECHNOTES}`:
-        return 1;
-      case `/${pageEnum.ARTICLES}`:
-        return 2;
-      case `/${pageEnum.ME}`:
-        return 3;
-      default:
-        return 0;
+    let path = this.props.location.pathname;
+    if(this._isStrStartWith(path, `/${pageEnum.HOME}`)){
+      return 0;
     }
+    if(this._isStrStartWith(path, `/${pageEnum.TECHNOTES}`)){
+      return 1;
+    }
+    if(this._isStrStartWith(path, `/${pageEnum.ARTICLES}`)){
+      return 2;
+    }
+    if(this._isStrStartWith(path, `/${pageEnum.ME}`)){
+      return 3;
+    }
+    return 0;
   }
 
   render(){

@@ -5,7 +5,12 @@ let blogData = {
   iconSymbol: 'DG',
   tilte: 'Coding & Life',
   Subtitle: 'a mock blog',
-  content: 'blablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalbablablalba'
+  content: `blablalbablablalbablablal
+    bablablalbablablalbablablalbablablalba
+    blablalbablablalbablablalbablablalbablablalbabla
+    blalbablablalbablablalbablablalbablablalbablabla
+    lbablablalbablablalbablablalbablablalbablablalba
+    blablalbablablalbablablalba`
 };
 let blogItems = [blogData];
 
