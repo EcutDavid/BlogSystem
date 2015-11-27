@@ -49,7 +49,7 @@ export default class Me extends React.Component{
             <br />
             I begin study and practise new techs.
             <br />
-            Never stop improving my skills and efficiency.
+            Never stop improving my craft.
           </article>
         </div>
 
@@ -86,6 +86,19 @@ export default class Me extends React.Component{
           <FontIcon style={{fontSize: '6em', color: themeBackColor}}
             className='fa fa-heart-o icon right'
             hoverColor='#E74748'/>
+        </div>
+
+        <div className='ContentRow'>
+          <FontIcon style={{fontSize: '6em', color: themeBackColor}}
+            className='fa fa-group icon left'
+            hoverColor='#E74748'/>
+          <article className='content'>
+            Start working at Wiredcraft
+            <br />
+            from Nov 4, 2015.
+            <br />
+            I love there.
+          </article>
         </div>
       </div>
     );
